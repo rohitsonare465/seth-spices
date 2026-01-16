@@ -92,7 +92,7 @@ const WhyChoose = () => {
               Why Choose <span className="text-gold">Seth Spices</span>?
             </h1>
             <p className="why-hero__subtitle">
-              For over 25 years, we've been the trusted choice for discerning customers 
+              For over 25 years, we've been the trusted choice for discerning customers
               who refuse to compromise on quality. Discover what makes us different.
             </p>
           </div>
@@ -146,8 +146,8 @@ const WhyChoose = () => {
               <span className="section-label">Proudly Indian</span>
               <h2 className="section-title">Made in India, Loved Worldwide</h2>
               <p>
-                India is the spice capital of the world, and we source our ingredients from the 
-                finest growing regions. Each region imparts unique characteristics to the spices, 
+                India is the spice capital of the world, and we source our ingredients from the
+                finest growing regions. Each region imparts unique characteristics to the spices,
                 creating flavors that are impossible to replicate elsewhere.
               </p>
               <div className="why-india__flag">
@@ -257,7 +257,7 @@ const WhyChoose = () => {
               <Button variant="gold" size="lg">Explore Products</Button>
             </Link>
             <a
-              href="https://wa.me/919876543210?text=Hi,%20I%20want%20to%20know%20more%20about%20Seth%20Spices"
+              href="https://wa.me/919755554650?text=Hi,%20I%20want%20to%20know%20more%20about%20Seth%20Spices"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -6,13 +6,13 @@ import './Home.css';
 const Home = () => {
   useEffect(() => {
     const reveals = document.querySelectorAll('.reveal');
-    
+
     const revealOnScroll = () => {
       reveals.forEach(element => {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
         const revealPoint = 150;
-        
+
         if (elementTop < windowHeight - revealPoint) {
           element.classList.add('active');
         }
@@ -109,24 +109,24 @@ const Home = () => {
           <div className="hero__spice-element hero__spice-element--2"></div>
           <div className="hero__spice-element hero__spice-element--3"></div>
         </div>
-        
+
         <div className="container">
           <div className="hero__content">
             <div className="hero__badge">
               <span className="hero__badge-icon">👑</span>
               <span>Premium Export Quality</span>
             </div>
-            
+
             <h1 className="hero__title">
               Experience the <br />
               <span className="text-gold">Royal Taste</span> from India
             </h1>
-            
+
             <p className="hero__subtitle">
-              Authentic Indian spices crafted with tradition, processed with precision. 
+              Authentic Indian spices crafted with tradition, processed with precision.
               From the heart of India's spice gardens to kitchens worldwide.
             </p>
-            
+
             <div className="hero__cta">
               <Button to="/products" variant="gold" size="large">
                 Explore Our Range
@@ -149,8 +149,8 @@ const Home = () => {
           <div className="hero__visual">
             <div className="hero__image-stack">
               <div className="hero__main-image">
-                <img 
-                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=700&fit=crop" 
+                <img
+                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=700&fit=crop"
                   alt="Premium Indian spices collection"
                 />
               </div>
@@ -246,14 +246,14 @@ const Home = () => {
           <div className="about-preview__grid reveal">
             <div className="about-preview__images">
               <div className="about-preview__image about-preview__image--main">
-                <img 
-                  src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=500&h=600&fit=crop" 
+                <img
+                  src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=500&h=600&fit=crop"
                   alt="Spice processing"
                 />
               </div>
               <div className="about-preview__image about-preview__image--secondary">
-                <img 
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" 
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop"
                   alt="Indian spice farms"
                 />
               </div>
@@ -267,17 +267,17 @@ const Home = () => {
               <span className="section-label">Our Story</span>
               <h2 className="section-title">A Legacy of Purity & Tradition</h2>
               <p className="lead">
-                Since 1998, Seth Spices has been synonymous with premium quality Indian spices. 
-                Our journey began with a simple mission – to share the authentic flavors of 
+                Since 1998, Seth Spices has been synonymous with premium quality Indian spices.
+                Our journey began with a simple mission – to share the authentic flavors of
                 India with the world.
               </p>
               <p>
-                From the sun-kissed farms of Kerala to the aromatic fields of Rajasthan, 
-                we source the finest spices and process them with utmost care. Every 
-                product that bears our name is a testament to our commitment to purity 
+                From the sun-kissed farms of Kerala to the aromatic fields of Rajasthan,
+                we source the finest spices and process them with utmost care. Every
+                product that bears our name is a testament to our commitment to purity
                 and excellence.
               </p>
-              
+
               <div className="about-preview__features">
                 <div className="about-preview__feature">
                   <span className="about-preview__feature-icon">🌾</span>
@@ -339,21 +339,21 @@ const Home = () => {
               Let's Bring the Royal Taste of India to Your Business
             </h2>
             <p className="cta-section__subtitle">
-              Whether you're a retailer, distributor, or food manufacturer, we have 
+              Whether you're a retailer, distributor, or food manufacturer, we have
               the perfect spice solutions for your needs.
             </p>
             <div className="cta-section__buttons">
               <Button to="/contact" variant="gold" size="large">
                 Get in Touch
               </Button>
-              <a 
-                href="https://wa.me/919876543210" 
+              <a
+                href="https://wa.me/919755554650"
                 className="cta-section__whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
                 <span>Chat on WhatsApp</span>
               </a>

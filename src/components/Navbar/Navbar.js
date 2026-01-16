@@ -97,7 +97,7 @@ const Navbar = () => {
 
           <div className="navbar__actions">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919755554650"
               className="navbar__whatsapp"
               target="_blank"
               rel="noopener noreferrer"
