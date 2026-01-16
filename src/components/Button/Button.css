@@ -1,0 +1,156 @@
+/* ===== Premium Button Styles - Seth Spices ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:disabled::before {
+  display: none;
+}
+
+/* Sizes */
+.btn--small {
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+}
+
+.btn--medium {
+  padding: var(--space-md) var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.btn--large {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: 1.05rem;
+  border-radius: var(--radius-xl);
+}
+
+/* Primary - Royal Brown */
+.btn--primary {
+  color: white;
+  background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-600) 100%);
+  box-shadow: 0 4px 15px rgba(163, 82, 48, 0.25);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-700) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(163, 82, 48, 0.35);
+}
+
+/* Secondary */
+.btn--secondary {
+  color: var(--primary-700);
+  background-color: var(--primary-50);
+  border: 2px solid var(--primary-200);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: var(--primary-100);
+  border-color: var(--primary-300);
+  transform: translateY(-2px);
+}
+
+/* Gold - Premium */
+.btn--gold {
+  color: var(--primary-900);
+  background: var(--gold-shimmer);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn--gold:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(201, 162, 39, 0.4);
+}
+
+/* Outline */
+.btn--outline {
+  color: var(--primary-700);
+  background-color: transparent;
+  border: 2px solid var(--primary-600);
+}
+
+.btn--outline:hover:not(:disabled) {
+  background-color: var(--primary-600);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Outline White */
+.btn--outline-white {
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn--outline-white:hover:not(:disabled) {
+  background-color: white;
+  color: var(--primary-800);
+  transform: translateY(-2px);
+}
+
+/* Ghost */
+.btn--ghost {
+  color: var(--primary-700);
+  background-color: transparent;
+}
+
+.btn--ghost::before {
+  display: none;
+}
+
+.btn--ghost:hover:not(:disabled) {
+  color: var(--primary-800);
+  background-color: var(--primary-50);
+}
+
+/* Dark */
+.btn--dark {
+  color: white;
+  background-color: var(--neutral-900);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--dark:hover:not(:disabled) {
+  background-color: var(--neutral-800);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Full Width */
+.btn--full {
+  width: 100%;
+}

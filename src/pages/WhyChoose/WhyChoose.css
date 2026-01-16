@@ -1,0 +1,452 @@
+/* ===== Premium Why Choose Page - Seth Spices ===== */
+
+/* Hero */
+.why-hero {
+  padding: 160px 0 100px;
+  text-align: center;
+}
+
+.why-hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.why-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: rgba(201, 162, 39, 0.15);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  margin-bottom: var(--space-xl);
+  backdrop-filter: blur(10px);
+}
+
+.why-hero__badge-icon {
+  font-size: 1rem;
+}
+
+.why-hero__title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  margin-bottom: var(--space-xl);
+  line-height: 1.15;
+}
+
+.why-hero__subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* USPs Section */
+.why-usps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.why-usps__card {
+  background: white;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-usps__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gold-shimmer);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.why-usps__card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.why-usps__card:hover::before {
+  opacity: 1;
+}
+
+.why-usps__icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.why-usps__highlight {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--green-100);
+  color: var(--green-700);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-md);
+}
+
+.why-usps__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  margin-bottom: var(--space-sm);
+}
+
+.why-usps__description {
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  line-height: 1.7;
+}
+
+/* Differentiators */
+.why-differentiators {
+  padding: var(--space-4xl) 0;
+}
+
+.why-differentiators__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2xl);
+}
+
+.why-differentiators__item {
+  text-align: center;
+}
+
+.why-differentiators__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--primary-800);
+  line-height: 1;
+}
+
+.why-differentiators__label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-700);
+  margin: var(--space-xs) 0;
+}
+
+.why-differentiators__description {
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+}
+
+/* Made in India */
+.why-india__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.why-india__content p {
+  color: var(--neutral-600);
+  line-height: 1.75;
+  margin-bottom: var(--space-lg);
+}
+
+.why-india__flag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: linear-gradient(135deg, var(--turmeric-50), var(--green-50));
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  color: var(--green-700);
+}
+
+.why-india__flag span:first-child {
+  font-size: 1.5rem;
+}
+
+.why-india__regions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.why-india__region {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+}
+
+.why-india__region:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.why-india__region-image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.why-india__region-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.why-india__region:hover .why-india__region-image img {
+  transform: scale(1.1);
+}
+
+.why-india__region-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-xl) var(--space-lg);
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: white;
+}
+
+.why-india__region-info h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.why-india__region-info span {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Testimonials */
+.why-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.why-testimonials__card {
+  background: white;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.why-testimonials__quote {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--gold);
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  opacity: 0.3;
+}
+
+.why-testimonials__text {
+  font-size: 1rem;
+  color: var(--neutral-700);
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  z-index: 1;
+}
+
+.why-testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.why-testimonials__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.why-testimonials__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-testimonials__info strong {
+  font-size: 1rem;
+  color: var(--neutral-800);
+}
+
+.why-testimonials__info span {
+  font-size: 0.85rem;
+  color: var(--neutral-500);
+}
+
+.why-testimonials__location {
+  font-size: 0.8rem;
+  color: var(--primary-600);
+  font-weight: 500;
+}
+
+/* Comparison Table */
+.why-comparison__table {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.why-comparison__header,
+.why-comparison__row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.why-comparison__header {
+  background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+  color: white;
+  font-weight: 600;
+}
+
+.why-comparison__col {
+  padding: var(--space-lg) var(--space-xl);
+  border-bottom: 1px solid var(--neutral-100);
+}
+
+.why-comparison__header .why-comparison__col {
+  border-bottom: none;
+  font-size: 0.95rem;
+}
+
+.why-comparison__row:last-child .why-comparison__col {
+  border-bottom: none;
+}
+
+.why-comparison__col--seth {
+  background: var(--green-50);
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+.why-comparison__header .why-comparison__col--seth {
+  background: var(--gold);
+  color: var(--neutral-900);
+}
+
+.why-comparison__row .why-comparison__col:first-child {
+  font-weight: 600;
+  color: var(--neutral-700);
+}
+
+.why-comparison__row .why-comparison__col:last-child {
+  color: var(--red-600);
+}
+
+/* CTA */
+.why-cta {
+  padding: var(--space-5xl) 0;
+}
+
+.why-cta__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: white;
+  margin-bottom: var(--space-lg);
+}
+
+.why-cta__subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-cta__buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .why-usps__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-differentiators__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .why-india__regions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-testimonials__grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-hero {
+    padding: 140px 0 80px;
+  }
+
+  .why-usps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-differentiators__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .why-india__regions {
+    grid-template-columns: 1fr;
+  }
+
+  .why-comparison__header,
+  .why-comparison__row {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+
+  .why-comparison__col {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.8rem;
+  }
+
+  .why-cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
