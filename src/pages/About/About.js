@@ -6,7 +6,7 @@ import './About.css';
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
     // Scroll reveal animation
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
@@ -16,7 +16,7 @@ const About = () => {
         }
       });
     }, { threshold: 0.1 });
-    
+
     revealElements.forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
@@ -36,9 +36,10 @@ const About = () => {
   ];
 
   const team = [
-    { name: 'Rajesh Seth', role: 'Founder & Managing Director', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop' },
-    { name: 'Priya Seth', role: 'Director - Quality Assurance', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop' },
-    { name: 'Amit Sharma', role: 'Head - Export Operations', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop' }
+    { name: 'Prakash Pancholi', role: 'Director', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop' },
+    { name: 'Parakram Verma', role: 'Co-Director', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop' },
+    { name: 'Aryaman Pancholi', role: 'Founder', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop' },
+    { name: 'Sanskar Singh Chouhan', role: 'Co-Founder', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop' }
   ];
 
   return (
@@ -56,8 +57,8 @@ const About = () => {
               <span className="text-gold">Pure Indian Spices</span>
             </h1>
             <p className="about-hero__subtitle">
-              For over 25 years, Seth Spices has been bringing the authentic taste 
-              of India to kitchens around the world. Our commitment to purity and 
+              For over 25 years, Seth Spices has been bringing the authentic taste
+              of India to kitchens around the world. Our commitment to purity and
               quality has made us a trusted name in the spice industry.
             </p>
           </div>
@@ -84,18 +85,18 @@ const About = () => {
               <span className="section-label">Our Heritage</span>
               <h2 className="section-title">From Farm to Your Table</h2>
               <p className="lead">
-                Seth Spices was born from a simple belief: every kitchen deserves 
+                Seth Spices was born from a simple belief: every kitchen deserves
                 the purest, most flavorful spices that India has to offer.
               </p>
               <p>
-                Our journey began in 1995 when our founder, inspired by generations 
-                of family tradition in spice trading, established Seth Spices with a 
+                Our journey began in 1995 when our founder, inspired by generations
+                of family tradition in spice trading, established Seth Spices with a
                 vision to bring authentic Indian flavors to the world.
               </p>
               <p>
-                Today, we work directly with farmers across India's most renowned 
-                spice-growing regions — from the chilli farms of Guntur to the 
-                turmeric fields of Erode, from the coriander farms of Rajasthan 
+                Today, we work directly with farmers across India's most renowned
+                spice-growing regions — from the chilli farms of Guntur to the
+                turmeric fields of Erode, from the coriander farms of Rajasthan
                 to the cardamom hills of Kerala.
               </p>
               <div className="about-story__highlights">
@@ -198,7 +199,7 @@ const About = () => {
               <span className="section-label">Quality Assurance</span>
               <h2 className="section-title">Certified for Excellence</h2>
               <p>
-                Our commitment to quality is backed by internationally recognized 
+                Our commitment to quality is backed by internationally recognized
                 certifications and rigorous testing protocols.
               </p>
               <Link to="/quality">
