@@ -42,12 +42,12 @@ const Contact = () => {
     {
       icon: '📞',
       title: 'Call Us',
-      details: ['+91 97555 54650', '+91 141 234 5678', 'Mon-Sat: 9:00 AM - 6:00 PM']
+      details: ['+91 97555 54650', 'Mon-Sat: 9:00 AM - 6:00 PM']
     },
     {
       icon: '✉️',
       title: 'Email Us',
-      details: ['info@sethspices.com', 'exports@sethspices.com', 'bulk.orders@sethspices.com']
+      details: ['info@sethspices.com']
     }
   ];
 

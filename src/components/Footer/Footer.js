@@ -108,14 +108,12 @@ const Footer = () => {
                   <span className="footer__contact-icon">📞</span>
                   <div>
                     <p><a href="tel:+919755554650">+91 97555 54650</a></p>
-                    <p><a href="tel:+911412345678">+91 141 234 5678</a></p>
                   </div>
                 </div>
                 <div className="footer__contact-item">
                   <span className="footer__contact-icon">✉️</span>
                   <div>
                     <p><a href="mailto:info@sethspices.com">info@sethspices.com</a></p>
-                    <p><a href="mailto:exports@sethspices.com">exports@sethspices.com</a></p>
                   </div>
                 </div>
               </div>
