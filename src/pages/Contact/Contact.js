@@ -37,7 +37,7 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Visit Our Office',
-      details: ['Seth Spices Pvt. Ltd.', 'Industrial Area, Phase 2', 'Jaipur, Rajasthan 302001', 'India']
+      details: ['Seth Spices Pvt. Ltd.', '337-3 Agarbatti Complex, Sanwer Road', 'Sector A, Indore', 'Madhya Pradesh, India']
     },
     {
       icon: '📞',
@@ -296,7 +296,7 @@ const Contact = () => {
               {/* Map */}
               <div className="contact-info__map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1640000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74842579726!2d75.69903523359375!3d22.724065799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1640000000000!5m2!1sen!2sin"
                   width="100%"
                   height="250"
                   style={{ border: 0, borderRadius: '16px' }}

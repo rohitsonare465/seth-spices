@@ -100,8 +100,8 @@ const Footer = () => {
                   <span className="footer__contact-icon">📍</span>
                   <div>
                     <p>Seth Spices Pvt. Ltd.</p>
-                    <p>Industrial Area, Phase 2</p>
-                    <p>Jaipur, Rajasthan 302001</p>
+                    <p>337-3 Agarbatti Complex, Sanwer Road</p>
+                    <p>Sector A, Indore, Madhya Pradesh</p>
                   </div>
                 </div>
                 <div className="footer__contact-item">
