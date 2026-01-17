@@ -165,9 +165,17 @@
   box-shadow: var(--shadow-sm);
 }
 
-.product-card--red .product-card__badge { color: var(--red-700); }
-.product-card--green .product-card__badge { color: var(--green-700); }
-.product-card--turmeric .product-card__badge { color: var(--turmeric-700); }
+.product-card--red .product-card__badge {
+  color: var(--red-700);
+}
+
+.product-card--green .product-card__badge {
+  color: var(--green-700);
+}
+
+.product-card--turmeric .product-card__badge {
+  color: var(--turmeric-700);
+}
 
 .product-card__content {
   padding: var(--space-lg);
@@ -367,23 +375,35 @@
   flex-wrap: wrap;
 }
 
+
 .products-cta__whatsapp {
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
-  padding: var(--space-md) var(--space-xl);
+  padding: var(--space-lg) var(--space-2xl);
+  /* Match large button: 1.5rem 3rem */
   background: #25d366;
   color: white;
+  font-size: 1.05rem;
   font-weight: 600;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   transition: all var(--transition-fast);
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
+
 
 .products-cta__whatsapp:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
+
+/* Ensure Contact Us button matches WhatsApp button size */
+.products-cta__buttons .btn--large {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: 1.05rem;
+  border-radius: var(--radius-xl);
+}
+
 
 /* Responsive */
 @media (max-width: 1200px) {

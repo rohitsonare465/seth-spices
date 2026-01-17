@@ -386,7 +386,7 @@ const Products = () => {
                 Chat on WhatsApp
               </a>
               <Link to="/contact">
-                <Button variant="outline" size="lg">Contact Us</Button>
+                <Button variant="outline-white" size="large">Contact Us</Button>
               </Link>
             </div>
           </div>
