@@ -188,6 +188,14 @@
   margin-bottom: var(--space-xs);
 }
 
+.product-card__hindi {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primary-600);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
 .product-card__description {
   font-size: 0.85rem;
   color: var(--neutral-500);

@@ -25,27 +25,78 @@ const Products = () => {
   const categories = [
     { id: 'all', name: 'All Products' },
     { id: 'ground', name: 'Ground Spices' },
+    { id: 'whole', name: 'Whole Spices' },
     { id: 'blends', name: 'Spice Blends' },
-    { id: 'whole', name: 'Whole Spices' }
+    { id: 'seasonings', name: 'Seasonings' }
   ];
 
   const products = [
     {
       id: 1,
-      name: 'Red Chilli Powder',
-      description: 'Premium Guntur chilli powder with vibrant red color and perfect heat balance.',
-      image: 'https://images.unsplash.com/photo-1599909533601-fc3f91fcf98d?w=500&h=500&fit=crop',
+      name: 'Asafoetida (Hing)',
+      hindiName: 'हींग',
+      description: 'Premium quality asafoetida with strong aroma and authentic flavor. Essential for tempering dals and vegetarian dishes.',
+      image: '/images/products/hing.jpg',
+      category: 'seasonings',
+      color: 'turmeric',
+      features: ['Strong Aroma', 'Pure Quality'],
+      packSizes: ['10g', '25g', '50g', '100g'],
+      origin: 'Premium Grade'
+    },
+    {
+      id: 2,
+      name: 'Cardamom (Elaichi)',
+      hindiName: 'इलायची',
+      description: 'Aromatic green cardamom pods with intense, sweet flavor. Perfect for desserts, chai, and biryanis.',
+      image: '/images/products/cardamom.jpg',
+      category: 'whole',
+      color: 'green',
+      features: ['Aromatic', 'Hand Selected'],
+      packSizes: ['25g', '50g', '100g', '250g'],
+      origin: 'Kerala & Guatemala'
+    },
+    {
+      id: 3,
+      name: 'Chilli (Lal Mirchi)',
+      hindiName: 'लाल मिर्च',
+      description: 'Premium red chilli powder with vibrant color and balanced heat. Made from finest Guntur and Kashmiri varieties.',
+      image: '/images/products/chilli.jpg',
       category: 'ground',
       color: 'red',
-      features: ['100% Pure', 'No Added Color'],
+      features: ['No Added Color', 'Perfect Heat'],
       packSizes: ['100g', '200g', '500g', '1kg'],
       origin: 'Guntur, Andhra Pradesh'
     },
     {
-      id: 2,
-      name: 'Coriander Powder',
-      description: 'Aromatic coriander powder from select Rajasthani dhania with citrusy notes.',
-      image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&h=500&fit=crop',
+      id: 4,
+      name: 'Cinnamon (Dalchini)',
+      hindiName: 'दालचीनी',
+      description: 'Premium quality cinnamon sticks with sweet, warm aroma. Ideal for curries, desserts, and beverages.',
+      image: '/images/products/cinnamon.jpg',
+      category: 'whole',
+      color: 'primary',
+      features: ['Sweet Aroma', 'Premium Bark'],
+      packSizes: ['50g', '100g', '250g', '500g'],
+      origin: 'Sri Lanka & Kerala'
+    },
+    {
+      id: 5,
+      name: 'Cloves (Laung)',
+      hindiName: 'लौंग',
+      description: 'Handpicked whole cloves with intense aroma and flavor. Essential spice for garam masala and biryanis.',
+      image: '/images/products/cloves.jpg',
+      category: 'whole',
+      color: 'primary',
+      features: ['Intense Flavor', 'Hand Picked'],
+      packSizes: ['25g', '50g', '100g', '250g'],
+      origin: 'Kerala & Madagascar'
+    },
+    {
+      id: 6,
+      name: 'Coriander (Dhania)',
+      hindiName: 'धनिया',
+      description: 'Aromatic coriander powder with fresh citrusy notes. Stone ground from select Rajasthani dhania seeds.',
+      image: '/images/products/coriander.jpg',
       category: 'ground',
       color: 'green',
       features: ['Stone Ground', 'Fresh Aroma'],
@@ -53,70 +104,100 @@ const Products = () => {
       origin: 'Rajasthan'
     },
     {
-      id: 3,
-      name: 'Turmeric Powder',
-      description: 'High-curcumin turmeric from Erode with deep golden color and earthy flavor.',
-      image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=500&h=500&fit=crop',
+      id: 7,
+      name: 'Cumin (Zeera)',
+      hindiName: 'जीरा',
+      description: 'Premium cumin seeds and powder with warm, earthy aroma. Essential for tempering and spice blends.',
+      image: '/images/products/cumin.jpg',
+      category: 'ground',
+      color: 'primary',
+      features: ['Fresh Ground', 'High Oil Content'],
+      packSizes: ['100g', '200g', '500g', '1kg'],
+      origin: 'Gujarat & Rajasthan'
+    },
+    {
+      id: 8,
+      name: 'Dried Mango Powder (Amchur)',
+      hindiName: 'अमचूर',
+      description: 'Tangy dried mango powder made from premium raw mangoes. Adds authentic sour flavor to chaats and curries.',
+      image: '/images/products/amchur.jpg',
+      category: 'ground',
+      color: 'turmeric',
+      features: ['Tangy Flavor', '100% Natural'],
+      packSizes: ['50g', '100g', '200g', '500g'],
+      origin: 'Uttar Pradesh'
+    },
+    {
+      id: 9,
+      name: 'Fenugreek (Methi)',
+      hindiName: 'मेथी',
+      description: 'Premium fenugreek seeds with slightly bitter, aromatic flavor. Essential for pickles and South Indian dishes.',
+      image: '/images/products/fenugreek.jpg',
+      category: 'whole',
+      color: 'turmeric',
+      features: ['Aromatic', 'Premium Seeds'],
+      packSizes: ['100g', '200g', '500g', '1kg'],
+      origin: 'Rajasthan'
+    },
+    {
+      id: 10,
+      name: 'Garlic (Lahsun)',
+      hindiName: 'लहसुन',
+      description: 'Dehydrated garlic powder and flakes with intense flavor. Perfect for convenient cooking and marinades.',
+      image: '/images/products/garlic.jpg',
+      category: 'ground',
+      color: 'primary',
+      features: ['Pure Garlic', 'No Additives'],
+      packSizes: ['50g', '100g', '200g', '500g'],
+      origin: 'Madhya Pradesh'
+    },
+    {
+      id: 11,
+      name: 'Mixed Masala',
+      hindiName: 'मिक्स मसाला',
+      description: 'Traditional blend of premium spices including garam masala, kitchen king, and sabji masala. Perfect for everyday cooking.',
+      image: '/images/products/mixed-masala.jpg',
+      category: 'blends',
+      color: 'primary',
+      features: ['Traditional Recipe', 'Versatile Use'],
+      packSizes: ['50g', '100g', '200g', '500g'],
+      origin: 'Seth Spices Blend'
+    },
+    {
+      id: 12,
+      name: 'Mustard (Rai/Sarson)',
+      hindiName: 'राई / सरसों',
+      description: 'Premium yellow and black mustard seeds with sharp, pungent flavor. Essential for tempering and pickles.',
+      image: '/images/products/mustard.jpg',
+      category: 'whole',
+      color: 'turmeric',
+      features: ['Sharp Flavor', 'High Oil Content'],
+      packSizes: ['100g', '200g', '500g', '1kg'],
+      origin: 'Rajasthan & Gujarat'
+    },
+    {
+      id: 13,
+      name: 'Seasoning Blends',
+      hindiName: 'सीज़निंग',
+      description: 'Premium seasoning blends for various cuisines including chat masala, pav bhaji masala, and special seasonings.',
+      image: '/images/products/seasoning.jpg',
+      category: 'seasonings',
+      color: 'red',
+      features: ['Flavor Packed', 'Ready to Use'],
+      packSizes: ['50g', '100g', '200g', '500g'],
+      origin: 'Seth Spices Blend'
+    },
+    {
+      id: 14,
+      name: 'Turmeric (Haldi)',
+      hindiName: 'हल्दी',
+      description: 'High-curcumin turmeric powder with deep golden color and earthy flavor. Lab tested for purity and quality.',
+      image: '/images/products/turmeric.jpg',
       category: 'ground',
       color: 'turmeric',
       features: ['High Curcumin', 'Lab Tested'],
       packSizes: ['100g', '200g', '500g', '1kg'],
       origin: 'Erode, Tamil Nadu'
-    },
-    {
-      id: 4,
-      name: 'Garam Masala',
-      description: 'Traditional blend of 12 premium spices roasted and ground to perfection.',
-      image: 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=500&h=500&fit=crop',
-      category: 'blends',
-      color: 'primary',
-      features: ['12 Spice Blend', 'Traditional Recipe'],
-      packSizes: ['50g', '100g', '200g', '500g'],
-      origin: 'Seth Spices Blend'
-    },
-    {
-      id: 5,
-      name: 'Garlic Powder',
-      description: 'Dehydrated garlic powder with intense flavor for convenient cooking.',
-      image: 'https://images.unsplash.com/photo-1638274690086-70d85ba0c0e7?w=500&h=500&fit=crop',
-      category: 'ground',
-      color: 'primary',
-      features: ['Pure Garlic', 'No Additives'],
-      packSizes: ['50g', '100g', '200g'],
-      origin: 'Madhya Pradesh'
-    },
-    {
-      id: 6,
-      name: 'Cumin Powder',
-      description: 'Freshly ground cumin with warm, earthy aroma for authentic Indian flavor.',
-      image: 'https://images.unsplash.com/photo-1599909533601-fc3f91fcf98d?w=500&h=500&fit=crop',
-      category: 'ground',
-      color: 'primary',
-      features: ['Fresh Ground', 'Aromatic'],
-      packSizes: ['100g', '200g', '500g'],
-      origin: 'Gujarat'
-    },
-    {
-      id: 7,
-      name: 'Kitchen King Masala',
-      description: 'All-purpose spice blend perfect for everyday vegetable dishes.',
-      image: 'https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=500&h=500&fit=crop',
-      category: 'blends',
-      color: 'turmeric',
-      features: ['Versatile Blend', 'Premium Quality'],
-      packSizes: ['50g', '100g', '200g', '500g'],
-      origin: 'Seth Spices Blend'
-    },
-    {
-      id: 8,
-      name: 'Black Pepper Whole',
-      description: 'Premium Malabar black pepper with bold, pungent flavor.',
-      image: 'https://images.unsplash.com/photo-1599909533601-fc3f91fcf98d?w=500&h=500&fit=crop',
-      category: 'whole',
-      color: 'primary',
-      features: ['Bold Flavor', 'Hand Selected'],
-      packSizes: ['50g', '100g', '250g'],
-      origin: 'Kerala'
     }
   ];
 
@@ -185,6 +266,9 @@ const Products = () => {
                 <div className="product-card__content">
                   <span className="product-card__origin">📍 {product.origin}</span>
                   <h3 className="product-card__name">{product.name}</h3>
+                  {product.hindiName && (
+                    <span className="product-card__hindi">{product.hindiName}</span>
+                  )}
                   <p className="product-card__description">{product.description}</p>
                   <div className="product-card__sizes">
                     <span className="product-card__sizes-label">Available:</span>

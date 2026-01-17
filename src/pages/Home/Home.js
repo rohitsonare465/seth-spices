@@ -29,35 +29,35 @@ const Home = () => {
     {
       id: 1,
       name: 'Chilli Powder',
-      image: 'https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=400&h=400&fit=crop',
+      image: '/images/products/chilli.jpg',
       description: 'Vibrant red chilli powder with rich aroma and perfect heat',
       color: 'red'
     },
     {
       id: 2,
       name: 'Coriander Powder',
-      image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=400&fit=crop',
+      image: '/images/products/coriander.jpg',
       description: 'Freshly ground coriander with citrusy, earthy notes',
       color: 'green'
     },
     {
       id: 3,
       name: 'Turmeric Powder',
-      image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400&h=400&fit=crop',
+      image: '/images/products/turmeric.jpg',
       description: 'Golden turmeric with high curcumin content',
       color: 'turmeric'
     },
     {
       id: 4,
       name: 'Garam Masala',
-      image: 'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?w=400&h=400&fit=crop',
+      image: '/images/products/mixed-masala.jpg',
       description: 'Traditional blend of warming aromatic spices',
       color: 'brown'
     },
     {
       id: 5,
       name: 'Garlic Powder',
-      image: 'https://images.unsplash.com/photo-1638864616207-56b30b1f31fe?w=400&h=400&fit=crop',
+      image: '/images/products/garlic.jpg',
       description: 'Pure garlic powder with intense, pungent flavor',
       color: 'cream'
     }
@@ -150,7 +150,7 @@ const Home = () => {
             <div className="hero__image-stack">
               <div className="hero__main-image">
                 <img
-                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=700&fit=crop"
+                  src="/images/hero-spices.jpg"
                   alt="Premium Indian spices collection"
                 />
               </div>
@@ -247,14 +247,14 @@ const Home = () => {
             <div className="about-preview__images">
               <div className="about-preview__image about-preview__image--main">
                 <img
-                  src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=500&h=600&fit=crop"
+                  src="/images/spice-processing.jpg"
                   alt="Spice processing"
                 />
               </div>
               <div className="about-preview__image about-preview__image--secondary">
                 <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop"
-                  alt="Indian spice farms"
+                  src="/seth-spices-logo.png"
+                  alt="Seth Spices Logo"
                 />
               </div>
               <div className="about-preview__badge">
